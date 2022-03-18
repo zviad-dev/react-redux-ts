@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
+import Settings from "./components/Settings/Settings";
+import "./App.css";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      kdnksjdbfskj
-    </div>
+    <Settings />
   );
-};
+}
 
 export default App;
