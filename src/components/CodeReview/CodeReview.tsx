@@ -22,8 +22,8 @@ function CodeReview({login, repo}:{login: string, repo: string}) {
       <button className="button" onClick={togglevisibilityCodeReview}>Начать поиск</button>
       {me.login && reviewer.login &&
         <div className={"result"}>
-          <UserCard login={me.login} avatar={me.avatar_url} />
-          <UserCard login={reviewer.login} avatar={reviewer.avatar_url} />
+          <UserCard login={me.login} avatar={me.avatar_url} role={"Пользователь"}/>
+          <UserCard login={reviewer.login} avatar={reviewer.avatar_url} role={"Ревьюер"}/> 
         </div>
       }
     </React.Fragment>
